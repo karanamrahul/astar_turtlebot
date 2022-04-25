@@ -163,6 +163,3 @@ def astar(start_pos, goal_pos, rpm1, rpm2, clearance):
 
     return robot_directions, robot_path , robot_pts
                 
-
-if __name__ == '__main__':
-    robot_dir,robot_path,robot_pts=astar([5,3,0],[8,8],5,10,0.1)

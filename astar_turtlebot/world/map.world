@@ -89,7 +89,7 @@
         <pose frame=''>0 -5.1 -1.1 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>0 -5.1 0.3 0 -0 0</pose>
+          <pose frame=''>5.1 -0.1 0.3 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -99,7 +99,7 @@
         <pose frame=''>5.1 0 -1.1 0 -0 1.57</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>5.1 0 0.3 0 -0 1.57</pose>
+          <pose frame=''>10.1 5 0.3 0 -0 1.57</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -109,7 +109,7 @@
         <pose frame=''>-5.1 0 -1.1 0 -0 1.57</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-5.1 0 0.3 0 -0 1.57</pose>
+          <pose frame=''>0.0 5 0.3 0 -0 1.57</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -119,7 +119,7 @@
         <pose frame=''>0 5.1 -1.1 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>0 5.1 0.3 0 -0 0</pose>
+          <pose frame=''>5 10.1 0.3 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -457,7 +457,7 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-2.88264 -2.90154 1.1 0 -0 0</pose>
+      <pose frame=''>2 2 1.1 0 -0 0</pose>
     </model>
     <model name='wood_cube_10cm'>
       <static>1</static>
@@ -521,7 +521,7 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-3.97015 0.024578 0 0 -0 0</pose>
+      <pose frame=''>1 5 0 0 -0 0</pose>
     </model>
     <model name='wood_cube_10cm_clone_0'>
       <static>1</static>
@@ -585,7 +585,7 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>0 0 -0.001013 0 -0 0</pose>
+      <pose frame=''>5 5 -0.001013 0 -0 0</pose>
     </model>
     <model name='wood_cube_10cm_clone_1'>
       <static>1</static>
@@ -649,7 +649,7 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>3.02586 -1.95 -0.001013 0 -0 0</pose>
+      <pose frame=''>8 3 -0.001013 0 -0 0</pose>
     </model>
     <model name='wooden_peg_clone_0_clone'>
       <static>1</static>
@@ -715,7 +715,7 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-3.08983 3.04961 1.3 0 -0 0</pose>
+      <pose frame=''>2 8 1.3 0 -0 0</pose>
     </model>
   </world>
 </sdf>

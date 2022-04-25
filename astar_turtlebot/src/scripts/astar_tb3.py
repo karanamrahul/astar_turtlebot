@@ -38,10 +38,7 @@ def turtlebot_pub():
     moves, node_points, path_points = AstarPath.astarPath()
     rospy.sleep(3.)
 
-    # path_file_name = "/home/siddharth/turtlebot_ws/src/path_publisher/src/path_points.csv"
-    # node_file_name = "/home/siddharth/turtlebot_ws/src/path_publisher/src/path_nodes.csv"
-    # move_file_name = "/home/siddharth/turtlebot_ws/src/path_publisher/src/vel_points.csv"
-    #print('Using' , move_file_name)
+
     # moves = read_file(move_file_name)
     # node_points = read_file(node_file_name)
     # path_points = read_file(path_file_name)
@@ -71,10 +68,10 @@ def turtlebot_pub():
         else:
             move = moves.pop(0)
 
-        #print(move)
+
 
         vel = get_twist_msg(move)
-        #update omega
+
         if (abs(min_dist) > 0.1 and len(moves) > 0):
            vel =  updateOmega(vel, min_dist)
 

@@ -21,8 +21,8 @@
 
   <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
 
-  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model turtlebot3 -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -Y $(arg theta_init) -param robot_description" />
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model turtlebot3 -x $(arg x_init) -y $(arg y_init) -z $(arg z_init) -Y $(arg theta_init) -param robot_description" />
   
-  <node pkg="astar_turtlebot" type="astar_tb3" name="robot_talker" output="screen" />
+  <node pkg="astar_turtlebot" type="astar_tb3.py" name="turtlebot_pub" output="screen" />
 </launch>
 
