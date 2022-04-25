@@ -386,7 +386,7 @@ if __name__ == "__main__":
     if is_obstacle(goal_pos[0],goal_pos[1]) or is_obstacle(start_pos[0],start_pos[1]) or check_obs_space(start_pos[0],start_pos[1]): 
          print("Please enter different start_pos and goal_pos away from the obstacle space")
     else:
-        result,predec,turtle_actions,lin_ang = astar(maze, start_pos, goal_pos,(100,100))
+        result,predec,turtle_actions,lin_ang = astar(maze, start_pos, goal_pos,(10,10))
         # Display the map with the explored nodes
         # predec.pop((start_pos[0],start_pos[1]),None)
         # for key,val in predec.items():

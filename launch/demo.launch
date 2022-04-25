@@ -1,8 +1,14 @@
 <launch>
   <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
-  <arg name="x_pos" default="-3.0"/>
-  <arg name="y_pos" default="1.0"/>
-  <arg name="z_pos" default="0.0"/>
+  <arg name="x_init" default="5"/>
+  <arg name="y_init" default="3"/>
+  <arg name="z_init" default="0"/>
+  <arg name="theta_init" default="0"/>
+  <arg name="x_final" default="4"/>
+  <arg name="y_final" default="4"/>
+  <arg name="clearance" default="0"/>
+  <arg name="rpm1" default="15"/>
+  <arg name="rpm2" default="10"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(find astar_turtlebot)/world/map.world"/>
@@ -15,7 +21,8 @@
 
   <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
 
-  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model turtlebot3 -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model turtlebot3 -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -Y $(arg theta_init) -param robot_description" />
   
-  <node pkg="astar_turtlebot" type="test" name="robot_talker" output="screen" />
+  <node pkg="astar_turtlebot" type="astar_tb3" name="robot_talker" output="screen" />
 </launch>
+
