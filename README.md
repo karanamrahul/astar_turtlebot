@@ -4,7 +4,35 @@ This project contains A* path planning algorithm implementation for Turtlebot3.
 
 TurtleBot3 planning using A-Star using Differential constraints
 
+## File Structure (A star differntial drive directory)
 
+```
+├── Code
+|  ├── astardd.py
+|  ├── Node.py
+|  ├── helper.py
+├── Results
+|  |  ├── astar_output.mp4
+|  |  ├── output.png
+
+```
+
+## File Structure (A star Turtle Bot  directory)
+
+```
+├── src/scripts
+|  ├── astardd.py
+|  ├── astar_tb3.py
+|  ├── Node.py
+|  ├── helper.py
+├── launch
+|  ├── demo.launch
+├── world
+|  |  ├── map.world
+|  ├── CMakeList.txt
+|  ├── package.xml
+
+```
 ### Obstacle map 
 <p align="center">
 <img src="https://github.com/karanamrahul/astar_turtlebot/blob/main/astar_differential/results/obstacle_map.png"/>
