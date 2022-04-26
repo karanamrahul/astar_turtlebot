@@ -29,6 +29,9 @@ TurtleBot3 planning using A-Star using Differential constraints
 |  ├── demo.launch
 ├── world
 |  |  ├── map.world
+├── results
+|  |  ├── turtle_out1.mp4
+|  |  ├── turtle_out2.mp4
 |  ├── CMakeList.txt
 |  ├── package.xml
 
@@ -41,7 +44,7 @@ TurtleBot3 planning using A-Star using Differential constraints
 
 ## A-star Output
 <p align="center">
-<img src="https://github.com/karanamrahul/astar_turtlebot/blob/main/astar_differential/results/output1.png"/>
+<img src="https://github.com/karanamrahul/astar_turtlebot/blob/main/astar_differential/results/output_3.png"/>
 </p>
 
 ## Results 
@@ -119,7 +122,7 @@ catkin_make
 After cloning the repository lets create an executable for our .py file that contains the code to run our program.
 
 ```
-cd ~/catkin_ws/src/astar_turtlebot/src/scripts
+cd ~/catkin_ws/src/astar_turtlebot/src
 chmod +x astar_tb3.py
 catkin_make
 ```
