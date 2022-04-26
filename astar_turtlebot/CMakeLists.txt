@@ -9,6 +9,7 @@ project(astar_turtlebot)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   rospy
+  roscpp
   std_msgs
   geometry_msgs
   tf
@@ -104,7 +105,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-INCLUDE_DIRS src/scripts
+# INCLUDE_DIRS src/scripts
 #  LIBRARIES astar_turtlebot
 #  CATKIN_DEPENDS rospy std_msgs
 #  DEPENDS system_lib
@@ -121,11 +122,14 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-catkin_install_python(PROGRAMS
-   src/scripts/astar_tb3.py 
-   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
- )
+catkin_install_python(PROGRAMS src/astar_tb3.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
+
+install(DIRECTORY launch models rviz worlds 
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/astar_turtlebot.cpp

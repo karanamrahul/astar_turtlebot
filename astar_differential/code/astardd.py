@@ -106,9 +106,9 @@ def astar():
             
             # Writing the path,nodes and rpm values to a csv file for later implementation on the robot
             
-            path_file = open('astar_differential/code/nodes.csv', 'w')
-            path_nodes = open('astar_differential/code/path.csv', 'w')
-            file_rpm = open('astar_differential/code/rpm.csv', 'w')
+            path_file = open('astar_turtlebot/astar_differential/code/nodes.csv', 'w')
+            path_nodes = open('astar_turtlebot/astar_differential/code/path.csv', 'w')
+            file_rpm = open('astar_turtlebot/astar_differential/code/rpm.csv', 'w')
             
             path_write = csv.writer(path_file)
             nodes_write = csv.writer(path_nodes)
