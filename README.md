@@ -137,7 +137,9 @@ roslaunch astar_turtlebot demo.launch x_init:=2 y_init:=4 theta_init:=0 x_final:
 ```
 
 
-After entering all these values in the terminal, the A-star algorithm finds the optimum path between the entered start node and goal node. Then the "dvx, dvy, dw" values, which are the velocities in x-direction and y-direction and angular velocity along z-axis are published on the ROS Topic of the Turtlebot to move it from one point to another point.
+After entering all these values in the terminal, the A-star algorithm finds the optimum path between the entered start node and goal node. 
+Please close the matplotlib figure in order for the publisher to publish. (Don't forget to close the figure).
+Then the "dvx, dvy, dw" values, which are the velocities in x-direction and y-direction and angular velocity along z-axis are published on the ROS Topic of the Turtlebot to move it from one point to another point.
 
 ### A-star Turtlebot 3 Output
 <p align="center">
